@@ -1,0 +1,424 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  max-width: 1600px;
+  margin:0 auto;
+}
+
+.nav-item.active {
+  border-bottom: 4px solid #4fb4c4;
+}
+
+.nav-link {
+  color: black;
+  font-weight: 500;
+}
+
+.search-input {
+  background-color: #e0f0f2;
+}
+.search-input:focus {
+  background-color: #e0f0f2;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.bg-primary {
+  background-color: #e0f0f2 !important;
+}
+.bb-primary {
+  border-bottom: 3px solid #4fb4c4;
+}
+
+.search-group {
+  width: 50%;
+  border-radius: 30px;
+}
+.search-group .input-group-text{
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important
+}
+.search-group input{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.h1-banner {
+  font-size: 75px;
+  font-weight: 600;
+  height: 100px;
+  align-items: center;
+  margin-bottom: 0;
+  letter-spacing: 4px;
+}
+
+.h1-banner img {
+  position: absolute;
+    right: 26%;
+    top: -8%;
+}
+
+.refle {
+  border-right: 8px solid black;
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.c , .ns {
+  transform: scale(-1);
+}
+
+.refle span {
+  font-size: 11px;
+    font-weight: 700;
+    position: absolute;
+    left: 31.5%;
+    bottom: 9px;
+    color: grey;
+}
+
+.spinner div {
+  position: absolute;
+  left: 29%;
+}
+
+.services-heading {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 76px;
+}
+.portfolio-heading {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 60px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 9px -5px rgba(204,194,204,1);
+-moz-box-shadow: 10px 10px 9px -5px rgba(204,194,204,1);
+box-shadow: 10px 10px 9px -5px rgba(204,194,204,1);
+/* overflow: hidden; */
+padding: 26px 10px;
+padding-bottom: 20px;
+position: relative;
+}
+
+.service-card h6 {
+  font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.service-banner {
+  background-image: url('../images/ecclipse.png');
+  background-repeat: no-repeat;
+  background-position-x: -32%;
+  background-size: 57% 100%;
+}
+
+.detail-overlay {
+  background-color: #4fb4c4;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .5s ease;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  transform: rotate(
+    15deg
+    );
+        border-radius: 20px;
+}
+
+.service-card:hover .detail-overlay {
+  opacity: 1;
+}
+.service-card:hover img {
+  opacity: 0;
+  transition: .5s ease;
+}
+.service-card:hover h6 {
+  opacity: 0;
+  transition: .5s ease;
+}
+.detail-overlay .name {
+  font-size: 14px;
+  font-weight: 600;
+}
+.detail-overlay .type {
+  margin-top: 7px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.detail-overlay span {
+  position: absolute;
+  -moz-transform: scale(1) rotate(-15deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -webkit-transform: scale(1) rotate(-15deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -o-transform: scale(1) rotate(-15deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  -ms-transform: scale(1) rotate(-15deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  transform: scale(1) rotate(-15deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+
+.service-card img {
+  height: 99px;
+  width: 97px;
+}
+
+.right-star {
+  position: absolute;
+  top: 0;
+  right: -17%;
+}
+
+.inside-star {
+  position: absolute;
+  top: -149%;
+  left: -42%
+}
+
+.rgba-red-strong, .rgba-red-strong:after {
+  background-color: rgb(79 ,180, 196,.6);
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.portfolio-card:hover .mask {
+  opacity: 1;
+}
+
+.view {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card {
+  height: 158px;
+}
+.portfolio-card .view {
+  height: 100%;
+}
+.portfolio-card img {
+  height: 100%;
+}
+
+
+.portfolio-card-2:hover .mask {
+  opacity: 1;
+}
+
+.portfolio-card-2 {
+  /* height: 158px; */
+}
+.portfolio-card-2 .view {
+  height: 100%;
+}
+.portfolio-card-2 img {
+  height: 100%;
+}
+
+
+
+.portfolio-card-3:hover .mask {
+  opacity: 1;
+}
+
+.portfolio-card-3 {
+  height: 334px;
+}
+.portfolio-card-3 .view {
+  height: 100%;
+}
+.portfolio-card-3 img {
+  height: 100%;
+}
+
+.port-star {
+  position: absolute;
+  right: 6%;
+  bottom: -93px;
+}
+
+.port-dot {
+  position: absolute;
+  left: -29%;
+}
+
+.port-shine {
+  position: absolute;
+  right: -20%;
+  bottom: 28%;
+}
+
+.client-heading {
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 96px;
+}
+
+.border-client {
+  border: 2px solid gray;
+}
+
+.client-section .col-lg-3 {
+  height: 90px;
+}
+
+.client-section img {
+  height: 100%;
+  width: 100%;
+}
+
+.client-shine img {
+  position: absolute;
+  top: -25px;
+  left: 10%;
+}
+
+.team-banner {
+  background-image: url('../images/ecclipse-2.png');
+  background-repeat: no-repeat;
+  background-position-x: 171%;
+  background-size: 57% 100%;
+}
+
+.team-heading {
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 220px;
+}
+
+.member {
+  height: 168px;
+  width: 172px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.member:hover .mask {
+  opacity: 1;
+}
+.member-odd {
+
+  transform: rotate(
+-7deg
+);
+}
+
+.member-even {
+  transform: rotate(
+-7deg
+);
+z-index: 9999;
+}
+
+.team-section {
+  height: 230px;
+}
+
+.member-third {
+  transform: rotate(
+    7deg)
+}
+
+.member-fourth {
+  transform: rotate(
+    -2deg)
+}
+
+.member-five {
+  transform: rotate(
+    -7deg
+    );
+}
+
+.contact {
+  height: 350px;
+}
+
+.project {
+  background-color: #666666;
+  color: white;
+}
+
+.project h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.linker {
+  cursor: pointer;
+  padding: 10px 35px;
+  border: 2px solid white;
+width: fit-content;
+border-radius: 5px;
+}
+.linker a {
+  color: white;
+}
+
+.contact {
+  background-color: #4aafbf;
+  color: white;
+
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.contact h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.team-star {
+  position: absolute;
+    top: -88px;
+    left: 13%;
+}
+
+.team-dot {
+  position: absolute;
+  right: 8%;
+  top: -117px;
+}
